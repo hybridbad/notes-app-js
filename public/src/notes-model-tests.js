@@ -1,15 +1,17 @@
 
-function testCreateNoteWithText(){
-  var note = new Note('My favourite language is Javascript');
 
-  assert.isTrue(note.text === "My favourite language is Javascript");
-};
+describe('notes-model', function(){
 
-function testReturnTextContent(){
-  var note = new Note('My favourite language is Javascript');
+  it('creates instance of note with text as argument', function(){
+    var note = new Note('My favourite language is Javascript');
 
-  assert.isTrue(note.print() === "My favourite language is Javascript");
-};
+    assert.isTrue(note.text === "My favourite language is Javascript");
+  });
 
-testCreateNoteWithText();
-testReturnTextContent();
+  it('returns text content when function called', function(){
+    var note = new Note('My favourite language is Javascript');
+
+    assert.isTrue(note.print() === "My favourite language is Javascript");
+  });
+
+});

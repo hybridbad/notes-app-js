@@ -5,11 +5,11 @@
   };
 
   ListView.prototype.returnHTML = function () {
-    var html = "";
+    var html = [];
     this.listModel.listArray.forEach(function(note){
-      html += "<ul><li>" + note.text + "</li></ul>"
+      html.push("<ul><li>" + note.text + "</li></ul>")
     });
-    return html
+    return html.join('');
   }
 
   exports.ListView = ListView
