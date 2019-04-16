@@ -24,7 +24,7 @@ const matchers = (exp) => ({
       console.log('pass')
       return true
     } else {
-      console.log('fail')
+      console.log('fail!!')
       return false
     }
   }
