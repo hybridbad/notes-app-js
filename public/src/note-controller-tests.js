@@ -7,7 +7,12 @@ describe('note controller', function(){
     assert.isTrue(controller.noteList.list[0].text === 'Test 1');
   })
 
+  it('creates a note list view', function(){
+    controller = new NoteController(new NoteList());
+    controller.add('Test 1')
 
+    controller.render();
+  })
 
 
 

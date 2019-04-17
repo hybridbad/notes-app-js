@@ -16,12 +16,11 @@
     },
 
     returnHTML: function(){
-      this.makeForm();
       var html = [];
       this.view.list.forEach(function(note){
         html.push("<ul><li>" + note.text + "</li></ul>")
       });
-      return html.join('');
+      return this.makeForm() + html.join('');
     }
   }
 

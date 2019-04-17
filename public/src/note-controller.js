@@ -1,5 +1,4 @@
 
-
 (function(exports) {
   var noteListView;
 
