@@ -8,6 +8,7 @@
   }
 
   NoteController.prototype = {
+    
     add: function(text) {
       this.noteList.add(text);
     },

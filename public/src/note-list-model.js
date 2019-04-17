@@ -5,6 +5,10 @@
 
   NoteList.prototype = {
 
+    addNote: function(note = Note){
+      this.list.push(note);
+    },
+
     add: function(text){
       this.list.push(new Note(text));
     },
