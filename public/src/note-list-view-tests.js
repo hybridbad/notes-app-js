@@ -16,7 +16,6 @@ describe('list view model', function(){
       noteslist.add('Bacon');
 
       var listView = new NoteListView(noteslist);
-
       assert.isTrue(listView.returnHTML() === "<ul><li>Buy Eggs</li></ul><ul><li>Bacon</li></ul>");
   });
 

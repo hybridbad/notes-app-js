@@ -7,4 +7,8 @@ describe('note controller', function(){
     assert.isTrue(controller.noteList.list[0].text === 'Test 1');
   })
 
+
+
+
+
 })
